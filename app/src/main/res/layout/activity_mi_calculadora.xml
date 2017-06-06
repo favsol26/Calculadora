@@ -6,249 +6,246 @@
     tools:context="com.example.pedrogonzalez.calculadora.MiCalculadora">
 
     <TextView
+        android:id="@+id/pantalla"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:ellipsize="end"
-        android:gravity="right"
-        android:textSize="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/pantalla"
         android:background="@android:color/white"
-        />
+        android:ellipsize="end"
+        android:gravity="right"
+        android:textSize="45dp" />
 
     <Button
-        android:layout_width="92.5dp"
-        android:layout_height="70dp"
         android:id="@+id/btborrar"
-        android:textSize="32dp"
-        android:text="C"
+        android:layout_width="92.5dp"
+        android:layout_height="70dp"
         android:layout_below="@id/pantalla"
-        android:layout_toRightOf="@+id/btnueve"
         android:layout_toEndOf="@+id/btnueve"
+        android:layout_toRightOf="@+id/btnueve"
         android:background="@color/colorAccent"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
-        android:layout_width="92.5dp"
-        android:layout_height="70dp"
-        android:id="@+id/btdiv"
-        android:textSize="32dp"
-        android:text="/"
-        android:layout_below="@id/btborrar"
-        android:layout_toRightOf="@+id/btseis"
-        android:layout_toEndOf="@+id/btseis"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
-
-
-    <Button
-        android:layout_width="92.5dp"
-        android:layout_height="70dp"
-        android:id="@+id/btmult"
-        android:textSize="32dp"
-        android:text="*"
-        android:layout_below="@id/btdiv"
-        android:layout_toRightOf="@+id/bttres"
-        android:layout_toEndOf="@+id/bttres"
-        android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
-        android:id="@+id/btsiete"
-        android:textSize="32dp"
-        android:text="7"
-        android:layout_below="@+id/pantalla"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="2dp"
-        android:background="@color/colornumericos"
+        android:text="C"
         android:textColor="@color/colorTxt"
-        />
+        android:textSize="32dp" />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
-        android:id="@+id/btocho"
-        android:textSize="32dp"
-        android:text="8"
-        android:layout_below="@+id/pantalla"
-        android:layout_toRightOf="@+id/btsiete"
-        android:layout_toEndOf="@+id/btsiete"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
-        android:id="@+id/btnueve"
-        android:textSize="32dp"
-        android:text="9"
-        android:layout_below="@+id/pantalla"
-        android:layout_toRightOf="@+id/btocho"
-        android:layout_toEndOf="@+id/btocho"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
+        android:id="@+id/btdiv"
         android:layout_width="92.5dp"
         android:layout_height="70dp"
-        android:id="@+id/btmenos"
-        android:textSize="32dp"
-        android:text="-"
-        android:layout_below="@+id/btmult"
-        android:layout_toRightOf="@+id/bttres"
-        android:layout_toEndOf="@+id/bttres"
+        android:layout_below="@id/btborrar"
+        android:layout_toEndOf="@+id/btseis"
+        android:layout_toRightOf="@+id/btseis"
         android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:text="/"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
 
     <Button
+        android:id="@+id/btmult"
+        android:layout_width="92.5dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btdiv"
+        android:layout_toEndOf="@+id/bttres"
+        android:layout_toRightOf="@+id/bttres"
+        android:background="@color/colorFondoBt"
+        android:text="*"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btsiete"
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btcuatro"
-        android:textSize="32dp"
-        android:text="4"
-        android:layout_below="@+id/btsiete"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/pantalla"
         android:layout_marginLeft="2dp"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="7"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
+        android:id="@+id/btocho"
         android:layout_width="88.5dp"
         android:layout_height="80dp"
+        android:layout_below="@+id/pantalla"
+        android:layout_toEndOf="@+id/btsiete"
+        android:layout_toRightOf="@+id/btsiete"
+        android:background="@color/colornumericos"
+        android:text="8"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btnueve"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/pantalla"
+        android:layout_toEndOf="@+id/btocho"
+        android:layout_toRightOf="@+id/btocho"
+        android:background="@color/colornumericos"
+        android:text="9"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btmenos"
+        android:layout_width="92.5dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btmult"
+        android:layout_toEndOf="@+id/bttres"
+        android:layout_toRightOf="@+id/bttres"
+        android:background="@color/colorFondoBt"
+        android:text="-"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btcuatro"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btsiete"
+        android:layout_marginLeft="2dp"
+        android:background="@color/colornumericos"
+        android:text="4"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
         android:id="@+id/btcinco"
-        android:textSize="32dp"
-        android:text="5"
-        android:layout_below="@+id/btocho"
-        android:layout_toRightOf="@+id/btcuatro"
-        android:layout_toEndOf="@+id/btcuatro"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btseis"
-        android:textSize="32dp"
-        android:text="6"
-        android:layout_below="@+id/btnueve"
-        android:layout_toRightOf="@+id/btcinco"
-        android:layout_toEndOf="@+id/btcinco"
+        android:layout_below="@+id/btocho"
+        android:layout_toEndOf="@+id/btcuatro"
+        android:layout_toRightOf="@+id/btcuatro"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="5"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
+        android:id="@+id/btseis"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnueve"
+        android:layout_toEndOf="@+id/btcinco"
+        android:layout_toRightOf="@+id/btcinco"
+        android:background="@color/colornumericos"
+        android:text="6"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btmas"
         android:layout_width="92.5dp"
         android:layout_height="111dp"
-        android:id="@+id/btmas"
-        android:textSize="32dp"
-        android:text="+"
         android:layout_below="@+id/btmenos"
-        android:layout_toRightOf="@+id/btsigno"
         android:layout_toEndOf="@+id/btsigno"
+        android:layout_toRightOf="@+id/btsigno"
         android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:text="+"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
         android:id="@+id/btuno"
-        android:textSize="32dp"
-        android:text="1"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/btcuatro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginLeft="2dp"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="1"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
         android:id="@+id/btdos"
-        android:textSize="32dp"
-        android:text="2"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/btcinco"
-        android:layout_toRightOf="@+id/btuno"
         android:layout_toEndOf="@+id/btuno"
+        android:layout_toRightOf="@+id/btuno"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="2"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
         android:id="@+id/bttres"
-        android:textSize="32dp"
-        android:text="3"
-        android:layout_below="@+id/btseis"
-        android:layout_toRightOf="@+id/btdos"
-        android:layout_toEndOf="@+id/btdos"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
+        android:layout_below="@+id/btseis"
+        android:layout_toEndOf="@+id/btdos"
+        android:layout_toRightOf="@+id/btdos"
+        android:background="@color/colornumericos"
+        android:text="3"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
         android:id="@+id/btcero"
-        android:textSize="32dp"
-        android:text="0"
-        android:layout_below="@+id/btuno"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/btuno"
         android:layout_marginLeft="2dp"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="0"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
-        android:layout_width="88.5dp"
-        android:layout_height="80dp"
         android:id="@+id/btpunto"
-        android:textSize="32dp"
-        android:text="."
-        android:layout_below="@+id/btdos"
-        android:layout_toRightOf="@+id/btcero"
-        android:layout_toEndOf="@+id/btcero"
-        android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
-
-    <Button
         android:layout_width="88.5dp"
         android:layout_height="80dp"
-        android:id="@+id/btsigno"
-        android:textSize="32dp"
-        android:text="+/-"
-        android:layout_below="@+id/bttres"
-        android:layout_toRightOf="@+id/btpunto"
-        android:layout_toEndOf="@+id/btpunto"
+        android:layout_below="@+id/btdos"
+        android:layout_toEndOf="@+id/btcero"
+        android:layout_toRightOf="@+id/btcero"
         android:background="@color/colornumericos"
-        android:textColor="@color/colorTxt"/>
+        android:text="."
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
+        android:id="@+id/btsigno"
+        android:layout_width="88.5dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/bttres"
+        android:layout_toEndOf="@+id/btpunto"
+        android:layout_toRightOf="@+id/btpunto"
+        android:background="@color/colornumericos"
+        android:text="+/-"
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/btigual"
         android:layout_width="95.5dp"
         android:layout_height="70dp"
-        android:id="@+id/btigual"
-        android:textSize="32dp"
-        android:text="="
         android:layout_below="@+id/btsigno"
-        android:layout_toRightOf="@+id/bthistorial"
         android:layout_toEndOf="@+id/bthistorial"
+        android:layout_toRightOf="@+id/bthistorial"
         android:background="@color/colorFondoBt"
-        android:textColor="@color/colorTxt"/>
+        android:text="="
+        android:textColor="@color/colorTxt"
+        android:textSize="32dp" />
 
     <Button
+        android:id="@+id/bthistorial"
         android:layout_width="177dp"
         android:layout_height="70dp"
-        android:id="@+id/bthistorial"
-        android:textSize="18dp"
-        android:text="Historial"
-        android:layout_below="@+id/btcero"
         android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btcero"
         android:background="@color/colorHisto"
+        android:text="Historial"
         android:textColor="@color/colorTxt"
-        />
+        android:textSize="18dp" />
 
 </RelativeLayout>
